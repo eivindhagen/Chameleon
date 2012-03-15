@@ -1,4 +1,8 @@
 Chameleon::Application.routes.draw do
+  resources :layouts
+  # get "layouts/index"
+  # get "layouts/show"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

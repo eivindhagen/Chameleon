@@ -1,0 +1,27 @@
+!!! 5
+%head
+  = yield :head
+
+%body
+  = yield :head
+
+  %table
+    %tbody
+      %tr
+        %td{colspan: 2}
+          #header
+            = yield :header
+          #nav1
+            = yield :nav1
+      %tr
+        %td
+          #nav2
+            = yield :nav2
+        %td
+          #main
+            = yield :main
+      %tr
+        %td{colspan: 2}
+          #footer
+            = yield :footer
+
