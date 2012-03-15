@@ -1,7 +1,12 @@
 Chameleon::Application.routes.draw do
-  resources :layouts
-  # get "layouts/index"
-  # get "layouts/show"
+  resources :layouts do
+    collection do
+      get 'sample'
+    end
+  end
+  match 'layouts/set_style/:id' => 'layouts#set_style'
+
+  root :to => 'layouts#sample'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

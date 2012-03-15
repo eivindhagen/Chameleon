@@ -1,9 +1,9 @@
-%h1
-  Layouts
+- content_for :main do
+  %h2
+    Layouts
+  - @layout_files.each do |file|
+    .file
+      = link_to file, "/layouts/#{file}"
 
-%h2
-  Files
-
-- @layout_files.each do |file|
-  .file
-    = link_to file, "/layouts/#{file}"
+  %h3
+    End of Layouts

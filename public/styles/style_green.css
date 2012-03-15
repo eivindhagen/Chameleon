@@ -1,0 +1,19 @@
+h1, h2, h3, h4, p{
+	color: green;
+}
+
+#header{
+	background-color: #dfd;
+}
+
+#nav1{
+	background-color: #cfc;
+}
+
+#nav2{
+	background-color: #bfb;
+}
+
+#footer{
+	background-color: #afa;
+}

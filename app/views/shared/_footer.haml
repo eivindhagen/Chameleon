@@ -1,0 +1,11 @@
+- content_for :footer do
+  FOOTER
+  Layouts:
+  - @layout_files.each do |file|
+    .file
+      = link_to file, "/layouts/#{file}"
+  Styles:
+  - @style_files.each do |file|
+    .file
+      = link_to file, "/layouts/set_style/#{file}"
+  

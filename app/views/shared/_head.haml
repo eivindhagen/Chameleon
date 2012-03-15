@@ -1,0 +1,7 @@
+%title
+  Chameleon
+= stylesheet_link_tag    "application"
+- if @session_style
+  = stylesheet_link_tag "/styles/#{@session_style}"
+= javascript_include_tag "application"
+= csrf_meta_tags
